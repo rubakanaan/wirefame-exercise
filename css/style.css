@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+body{
+    font-family: 'Playfair Display', serif;
+    font-size:larger;
+}
+header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    background:rgb(65, 63, 63);
+    width: 100%;
+  }
+header img{
+ padding-left: 70px;
+ padding-bottom: 20px;
+ padding-top: 20px;
+}
+
+ header nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 50px;
+    text-transform:capitalize;
+    color:gray;
+    position: relative;
+  }
+main {
+    width: 960px;
+    margin: auto;
+    line-height: 1.5;
+    
+  }
+  
+
+  header nav a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: whitesmoke;
+    left: 0;
+  }
+  
+  
+  main>img {
+      
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  main section:nth-child(2) {
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  main section:nth-child(3) {
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  main section article{
+   
+    padding-left: 20px;
+  }
+
+  p{
+    overflow: scroll;
+  }
+  
+  @keyframes example {
+    from {background-color:black;}
+    to {background-color:gray;}
+  }
+  
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation-name: example;
+    animation-duration: 3s;
+    color:whitesmoke;
+    animation-delay: 2s;
+    height:50px;
+    width:155px;
+    text-align: center;
+    
+  }
+
+  footer {
+
+    background:rgb(65, 63, 63);
+    width: 100%;
+    height:150px
+  }
+
+ 
