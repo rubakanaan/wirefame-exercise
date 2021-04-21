@@ -6,24 +6,30 @@ body{
 }
 header {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 100px 1fr;
     align-items: center;
     background:rgb(65, 63, 63);
     width: 100%;
+    gap: 30px;
   }
 header img{
  padding-left: 70px;
  padding-bottom: 20px;
  padding-top: 20px;
+ 
+}
+header nav {
+  text-align: center;
 }
 
  header nav a {
     text-decoration: none;
     display: inline-block;
-    padding-left: 50px;
+    padding-right: 50px;
     text-transform:capitalize;
     color:gray;
     position: relative;
+    
   }
 main {
     width: 960px;
@@ -68,7 +74,9 @@ main {
   }
 
   p{
-    overflow: scroll;
+    overflow: auto;
+    height:300px; 
+    padding-bottom: 20px;
   }
   
   @keyframes example {
@@ -76,7 +84,7 @@ main {
     to {background-color:gray;}
   }
   
-  div {
+ button {
     width: 100px;
     height: 100px;
     background-color: black;
@@ -87,6 +95,7 @@ main {
     height:50px;
     width:155px;
     text-align: center;
+    
     
   }
 
